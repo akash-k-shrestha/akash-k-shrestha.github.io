@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <meta name="description" content="Personal portfolio website showcasing projects, skills, and professional story." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+    header h1 { font-size: 2.75rem; margin-bottom: 0.5rem; }
+    header p { color: var(--muted); max-width: 700px; margin: auto; }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .card {
+      background: rgba(17, 24, 39, 0.85);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(56,189,248,0.15);
+      color: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin: 0.25rem 0.25rem 0 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #020617;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>
+      Aspiring <strong>Product / UX / Data / Software</strong> professional with a passion for building
+      thoughtful, user-centered solutions. This portfolio tells the story of my growth,
+      projects, and goals.
+    </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#capstone">Capstone</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a student in the INFO program with interests spanning technology, design,
+        and collaboration. My work focuses on understanding user needs, translating
+        insights into actionable decisions, and communicating clearly with stakeholders.
+      </p>
+      <p style="margin-top:1rem;">
+        Outside of school, I enjoy hobbies like photography, fitness, music, or volunteering,
+        which influence how I approach problem-solving and teamwork.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Project Title One</h3>
+        <p>
+          A short description of the problem, your role, and the impact of this project.
+          Focus on your decision-making process and collaboration.
+        </p>
+        <div>
+          <span class="tag">Research</span>
+          <span class="tag">Design</span>
+          <span class="tag">Analysis</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Project Title Two</h3>
+        <p>
+          Highlight constraints, tradeoffs, and what you learned. Link to GitHub,
+          a demo, or documentation if available.
+        </p>
+        <div>
+          <span class="tag">Development</span>
+          <span class="tag">Team Project</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="capstone">
+    <h2>Capstone Project</h2>
+    <div class="card">
+      <p>
+        This is my most significant academic project. I will use this space to
+        document the problem context, research process, iterations, and outcomes.
+      </p>
+      <ul style="margin-top:1rem; margin-left:1.25rem;">
+        <li>Problem statement & stakeholders</li>
+        <li>Research and insights</li>
+        <li>Design or technical approach</li>
+        <li>Results and reflection</li>
+      </ul>
+      <a class="btn" href="#">View Case Study</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Technical</h3>
+        <p>Python, SQL, JavaScript, HTML/CSS, Git, Figma, Tableau</p>
+      </div>
+      <div class="card">
+        <h3>Professional</h3>
+        <p>User research, communication, teamwork, presentation, critical thinking</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>
+        Email: <a href="mailto:youremail@example.com">youremail@example.com</a><br />
+        LinkedIn: <a href="#">linkedin.com/in/yourname</a><br />
+        GitHub: <a href="#">github.com/yourusername</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Your Name · Built with HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
